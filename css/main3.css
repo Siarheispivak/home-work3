@@ -1,0 +1,10 @@
+#myImg {
+   width: 900px;
+   display: flex;
+   justify-content: center;
+}
+.pic {
+   margin: 5px;
+   padding: 5px;
+   text-align: center;
+}
