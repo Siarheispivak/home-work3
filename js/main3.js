@@ -1,4 +1,5 @@
-let s = "";
+let s = "", r = '';
+
 let arrObj = [
 
    {
@@ -39,6 +40,7 @@ for (i = 0; i < 3; i++) {
    a = arrObj[i].a;
 
 
+
    s += `<div onclick="hugePick(${i + 1})" class="pic"><img src="images2/${k}" style="width: ${w}px; height: ${h}px;">${t}</div>`;
 
 
@@ -46,9 +48,15 @@ for (i = 0; i < 3; i++) {
 
 myImg.innerHTML = s;
 
-function hugePick(n) {
+function hugePick(n, r) {
 
-   s1 = `<div><img onclick="big.innerHTML =''" src="images2/${n}.jpg">${p}<a href="${a}">ссылка</a></div>`;
+   r = `<p>${p}<a href="#">${a}</a></p>`;
+   s1 = `<div class="big"><img onclick="big.innerHTML =''" src="images2/${n}.jpg" style="width: 700px; height: 500px;">${r}</div>`;
+
    big.innerHTML = s1;
 }
+
+
+
+
 
