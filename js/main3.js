@@ -41,7 +41,7 @@ for (i = 0; i < 3; i++) {
 
 
 
-   s += `<div onclick="hugePick(${i + 1})" class="pic"><img src="images2/${k}" style="width: ${w}px; height: ${h}px;">${t}</div>`;
+   s += `<div onclick="hugePick('${i + 1}')" class="pic"><img src="images2/${k}" style="width: ${w}px; height: ${h}px;">${t}</div>`;
 
 
 }
